@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Espaço Recanto dos Lagos · casamentos e eventos em Gaspar/SC</title>
+<meta name="description" content="Cerimônia no gramado, recepção no salão aberto para o jardim e festa sob as luzinhas. Espaço Recanto dos Lagos, Macucos, Gaspar/SC.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/recanto.css">
+<style>
+/* ===== Movimento (WolfStudio v3) — só roda com JS e sem "reduzir movimento" ===== */
+:root{--e:cubic-bezier(.2,.7,.2,1)}
+.anim :is(.cap-cabeca,.alternado figure,.nota-foto,.numeros li,.est-grade>div,.orc-cabeca,.passos,.orc-form,.vis-form,.duvidas details,.av-grade>*,.cont-grade>div){transition:opacity .7s var(--e) var(--d,0ms),translate .8s var(--e) var(--d,0ms),scale .8s var(--e) var(--d,0ms),rotate .8s var(--e) var(--d,0ms),transform .35s var(--e),box-shadow .35s,border-color .25s,background-color .25s}
+.anim :is(.cap-cabeca,.alternado figure,.nota-foto,.numeros li,.est-grade>div,.orc-cabeca,.passos,.orc-form,.vis-form,.duvidas details,.av-grade>*,.cont-grade>div):not(.in){opacity:0;translate:var(--tx,0px) var(--ty,22px);scale:var(--sc,1)}
+@keyframes sobe{from{opacity:0;translate:0 18px}}
+@keyframes gira{to{rotate:360deg}}
+@media print{.anim *{opacity:1!important;translate:none!important;scale:none!important;clip-path:none!important}}
+/* menu */
+.menu a.on{text-decoration:underline;text-underline-offset:6px}
+.bt{transition:transform .2s var(--e),box-shadow .2s,background-color .2s,color .2s}
+.bt:hover{transform:translateY(-2px)}
+/* abertura: o texto sobe e as três fotos do dia entram em sequência */
+.abertura-texto>*{animation:sobe .9s var(--e) both}
+.abertura-texto>:nth-child(2){animation-delay:.12s}.abertura-texto>:nth-child(3){animation-delay:.24s}.abertura-texto>:nth-child(4){animation-delay:.36s}
+.triptico li{animation:sobe 1s var(--e) .3s both}
+.triptico li:nth-child(2){animation-delay:.48s}.triptico li:nth-child(3){animation-delay:.66s}
+/* capítulos: fotos com zoom lento */
+.alternado figure{overflow:hidden}
+.alternado figure img{transition:scale 1.4s var(--e)}
+.alternado figure:hover img{scale:1.05}
+.anim .alternado figure{--sc:.97}
+.numeros b{font-variant-numeric:tabular-nums}
+/* estrutura: os itens entram um a um */
+.tracos li{transition:opacity .45s var(--e) calc(.25s + var(--k,0)*.06s),translate .45s var(--e) calc(.25s + var(--k,0)*.06s)}
+.anim .est-grade>div:not(.in) .tracos li{opacity:0;translate:0 8px}
+.tracos li:nth-child(2){--k:1}.tracos li:nth-child(3){--k:2}.tracos li:nth-child(4){--k:3}.tracos li:nth-child(5){--k:4}.tracos li:nth-child(6){--k:5}.tracos li:nth-child(7){--k:6}.tracos li:nth-child(8){--k:7}
+/* pré-orçamento e dúvidas */
+.passo:not([hidden]){animation:sobe .45s var(--e)}
+.orc-resultado:not([hidden]){animation:sobe .5s var(--e)}
+.duvidas details[open]>p{animation:sobe .4s var(--e)}
+.opcao.cartao{transition:transform .2s var(--e),box-shadow .2s}
+.opcao.cartao:hover{transform:translateY(-2px)}
+.av-nota b,.av-quesitos dd{font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+<script>(function(d){if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches)d.classList.add('anim')})(document.documentElement)</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<p class="faixa-demo">Demonstração WolfStudio — não é o site oficial.</p>
+
+<header class="topo" id="topo">
+  <a class="marca" href="#inicio" aria-label="Espaço Recanto dos Lagos, início">
+    <svg viewBox="0 0 64 64" width="44" height="44" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#1F3B2D"/><text x="32" y="41" text-anchor="middle" font-family="Bodoni Moda, serif" font-size="27" font-weight="600" fill="#A8D5B5">rl</text></svg>
+    <span>Espaço Recanto dos Lagos</span>
+  </a>
+  <nav class="menu" aria-label="Seções">
+    <a href="#cerimonia">Cerimônia</a><a href="#recepcao">Recepção</a><a href="#festa">Festa</a><a href="#estrutura">Estrutura</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
+  </nav>
+  <a class="bt bt-magenta bt-topo" href="#orcamento">Pré-orçamento</a>
+</header>
+
+<main id="conteudo">
+  <section class="abertura tom-nevoa" id="inicio" aria-labelledby="titulo">
+    <div class="abertura-texto">
+      <p class="sobretitulo">Macucos · Gaspar/SC</p>
+      <h1 id="titulo">Casar no gramado, festejar sob as luzes.</h1>
+      <p class="lead">Cerimônia ao ar livre, recepção no salão aberto para o jardim e festa até as 4h, com um evento por dia.</p>
+      <div class="acoes">
+        <a class="bt bt-magenta" href="#orcamento">Montar pré-orçamento</a>
+        <a class="bt bt-contorno" href="#visita">Agendar visita</a>
+      </div>
+    </div>
+    <div class="faixa-dia">
+    <ul class="triptico" role="list">
+      <li><img width="1280" height="852" src="assets/img/cerimonia-gramado-buganvilias.jpg" alt="Cerimônia montada no gramado, com bancos de madeira, tenda branca e buganvílias magenta ao fundo" fetchpriority="high"><span>tarde</span></li>
+      <li><img width="1300" height="975" src="assets/img/lago-entardecer.jpg" alt="Lago do espaço ao entardecer, cercado de mata" fetchpriority="high"><span>pôr do sol</span></li>
+      <li><img width="800" height="1067" src="assets/img/piscina-varal-luzes-noite.jpg" alt="Piscina à noite com varal de luzinhas acesas" fetchpriority="high"><span>luzinhas</span></li>
+    </ul>
+    </div>
+  </section>
+
+  <section class="capitulo tom-folha" id="cerimonia" aria-labelledby="t-cer">
+    <div class="cap-cabeca">
+      <p class="hora-cap">I · a tarde</p>
+      <h2 id="t-cer">A cerimônia</h2>
+      <p>No gramado, com bancos de madeira, tenda branca, pergolado de rosas e buganvílias. Ou no salão, se o casal preferir.</p>
+    </div>
+    <div class="alternado">
+      <figure class="v1"><img loading="lazy" decoding="async" width="1200" height="1158" src="assets/img/cerimonia-gramado-ceu-azul.jpg" alt="Gramado com bancos de madeira e tenda branca sob céu azul"></figure>
+      <figure class="v2"><img loading="lazy" decoding="async" width="1100" height="825" src="assets/img/pergolado-rosas.jpg" alt="Pergolado coberto de rosas no jardim"></figure>
+      <figure class="v3"><img loading="lazy" decoding="async" width="800" height="1067" src="assets/img/lago-e-trilha.jpg" alt="Trilha ao lado de um dos lagos do espaço"></figure>
+      <figure class="v4"><img loading="lazy" decoding="async" width="1280" height="853" src="assets/img/cerimonia-interna-cadeiras.jpg" alt="Cadeiras montadas para cerimônia dentro do salão"></figure>
+    </div>
+  </section>
+
+  <section class="capitulo tom-entardecer" id="recepcao" aria-labelledby="t-rec">
+    <div class="cap-cabeca">
+      <p class="hora-cap">II · o entardecer</p>
+      <h2 id="t-rec">A recepção</h2>
+      <p>O salão coberto é aberto para o jardim. Mesas postas, mesa de bolo e doces, lounge.</p>
+    </div>
+    <div class="alternado alternado-inv">
+      <figure class="v1"><img loading="lazy" decoding="async" width="1300" height="975" src="assets/img/salao-cadeiras-jardim.jpg" alt="Salão aberto para o jardim, com cadeiras e arranjos de flores"></figure>
+      <figure class="v2"><img loading="lazy" decoding="async" width="800" height="1000" src="assets/img/mesa-posta-flores.jpg" alt="Mesa posta com arranjo de flores"></figure>
+      <figure class="v3"><img loading="lazy" decoding="async" width="1024" height="682" src="assets/img/mesa-bolo-luzes.jpg" alt="Mesa de bolo e doces com luzes ao fundo"></figure>
+      <figure class="v4"><img loading="lazy" decoding="async" width="1280" height="851" src="assets/img/salao-montado-mesas.jpg" alt="Salão montado com mesas redondas para a festa"></figure>
+    </div>
+    <p class="nota-foto">As decorações das fotos são de eventos já realizados no espaço.</p>
+  </section>
+
+  <div class="horizonte" aria-hidden="true"><span class="sol" id="sol"></span></div>
+
+  <section class="capitulo tom-noite" id="festa" aria-labelledby="t-festa">
+    <div class="luzinhas" aria-hidden="true"></div>
+    <div class="cap-cabeca">
+      <p class="hora-cap">III · a noite</p>
+      <h2 id="t-festa">A festa</h2>
+      <p>Quando escurece, acendem as luzinhas da piscina e do salão.</p>
+    </div>
+    <ul class="numeros" role="list">
+      <li><b>1</b><span>evento por dia</span></li>
+      <li><b>4h</b><span>festa até as 4h</span></li>
+      <li><b>suíte</b><span>suíte da noiva</span></li>
+    </ul>
+    <div class="alternado">
+      <figure class="v1"><img loading="lazy" decoding="async" width="1246" height="831" src="assets/img/mesa-bolo-noite.jpg" alt="Mesa de bolo iluminada à noite"></figure>
+      <figure class="v2"><img loading="lazy" decoding="async" width="800" height="1067" src="assets/img/salao-noite-entrada.jpg" alt="Entrada do salão iluminada à noite"></figure>
+      <figure class="v3"><img loading="lazy" decoding="async" width="800" height="1067" src="assets/img/piscina-varal-luzes-tarde.jpg" alt="Piscina com varal de luzes no fim da tarde"></figure>
+      <figure class="v4"><img loading="lazy" decoding="async" width="1280" height="853" src="assets/img/lounge-sofa.jpg" alt="Lounge com sofá e mesa de centro decorada"></figure>
+    </div>
+  </section>
+
+  <section class="estrutura tom-noite" id="estrutura" aria-labelledby="t-est">
+    <h2 id="t-est">Estrutura e serviços</h2>
+    <div class="est-grade">
+      <div>
+        <h3>No espaço</h3>
+        <ul class="tracos" role="list">
+          <li>Salão coberto</li><li>Cerimônia ao ar livre</li><li>Piscina</li><li>Cozinha equipada</li><li>Bar</li><li>Estacionamento</li><li>Suíte da noiva</li><li>Casa de campo</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul class="tracos" role="list">
+          <li>Cerimonialista</li><li>Bolo e doces</li><li>Bartender</li><li>DJ</li><li>Som</li><li>Iluminação</li><li>Painel de LED</li>
+        </ul>
+        <p class="pequeno">Buffet exclusivo do espaço.</p>
+      </div>
+      <div class="capacidade">
+        <p class="cap-num">50<span>–</span>280</p>
+        <p>convidados, conforme o formato do evento. Faixa publicada no anúncio do casamentos.com.br; <strong>número exato a confirmar com o espaço</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="orcamento tom-noite" id="orcamento" aria-labelledby="t-orc">
+    <div class="orc-cabeca">
+      <h2 id="t-orc">Pré-orçamento em 4 passos</h2>
+      <p>Responda e a mensagem sai pronta para o WhatsApp. Sem valores: o espaço responde com a proposta.</p>
+    </div>
+    <ol class="passos" id="passos" role="list">
+      <li data-passo="1" aria-current="step"><span>1</span> Data</li>
+      <li data-passo="2"><span>2</span> Convidados</li>
+      <li data-passo="3"><span>3</span> Formato</li>
+      <li data-passo="4"><span>4</span> Serviços</li>
+    </ol>
+    <form class="orc-form" id="orc" novalidate>
+      <div class="resumo-erros" id="erros" tabindex="-1" hidden></div>
+
+      <fieldset class="passo" data-passo="1">
+        <legend tabindex="-1">Passo 1 de 4 · Quando é o evento?</legend>
+        <label for="o-data">Data do evento</label>
+        <input type="date" id="o-data" name="data" aria-describedby="o-data-erro">
+        <p class="erro" id="o-data-erro" hidden></p>
+        <label class="opcao"><input type="checkbox" id="o-semdata" name="semdata"> Ainda não temos data definida</label>
+      </fieldset>
+
+      <fieldset class="passo" data-passo="2" hidden>
+        <legend tabindex="-1">Passo 2 de 4 · Quantos convidados?</legend>
+        <label for="o-conv-faixa">Arraste ou digite o número</label>
+        <div class="faixa-conv">
+          <input type="range" id="o-conv-faixa" min="50" max="280" step="10" value="120" aria-describedby="o-conv-ajuda">
+          <input type="number" id="o-conv" name="convidados" min="50" max="280" step="1" value="120" inputmode="numeric" aria-label="Número de convidados" aria-describedby="o-conv-ajuda o-conv-erro">
+        </div>
+        <p class="ajuda" id="o-conv-ajuda">Entre 50 e 280 convidados. A capacidade exata depende do formato e é confirmada pelo espaço.</p>
+        <p class="erro" id="o-conv-erro" hidden></p>
+      </fieldset>
+
+      <fieldset class="passo" data-passo="3" hidden aria-describedby="o-formato-erro">
+        <legend tabindex="-1">Passo 3 de 4 · Como vai ser a cerimônia?</legend>
+        <label class="opcao cartao"><input type="radio" name="formato" value="cerimônia no gramado e festa"> <span><b>Cerimônia no gramado</b> e festa no salão</span></label>
+        <label class="opcao cartao"><input type="radio" name="formato" value="cerimônia no salão e festa"> <span><b>Cerimônia no salão</b> e festa</span></label>
+        <label class="opcao cartao"><input type="radio" name="formato" value="só a festa"> <span><b>Só a festa</b>, sem cerimônia no local</span></label>
+        <p class="erro" id="o-formato-erro" hidden></p>
+      </fieldset>
+
+      <fieldset class="passo" data-passo="4" hidden>
+        <legend tabindex="-1">Passo 4 de 4 · Quais serviços interessam?</legend>
+        <div class="checks">
+          <label class="opcao"><input type="checkbox" name="servicos" value="cerimonialista"> Cerimonialista</label>
+          <label class="opcao"><input type="checkbox" name="servicos" value="bolo e doces"> Bolo e doces</label>
+          <label class="opcao"><input type="checkbox" name="servicos" value="bartender"> Bartender</label>
+          <label class="opcao"><input type="checkbox" name="servicos" value="DJ"> DJ</label>
+          <label class="opcao"><input type="checkbox" name="servicos" value="som"> Som</label>
+          <label class="opcao"><input type="checkbox" name="servicos" value="iluminação"> Iluminação</label>
+          <label class="opcao"><input type="checkbox" name="servicos" value="painel de LED"> Painel de LED</label>
+        </div>
+        <label for="o-nome">Seu nome</label>
+        <input type="text" id="o-nome" name="nome" autocomplete="name" aria-describedby="o-nome-erro">
+        <p class="erro" id="o-nome-erro" hidden></p>
+      </fieldset>
+
+      <div class="orc-nav">
+        <button type="button" class="bt bt-contorno" id="voltar" hidden>Voltar</button>
+        <button type="submit" class="bt bt-magenta" id="avancar">Continuar</button>
+      </div>
+    </form>
+
+    <div class="orc-resultado" id="resultado" hidden tabindex="-1" aria-labelledby="t-res">
+      <h3 id="t-res">Sua mensagem está pronta</h3>
+      <pre id="msg"></pre>
+      <div class="acoes">
+        <button type="button" class="bt bt-magenta" id="enviar">Enviar pelo WhatsApp</button>
+        <button type="button" class="bt bt-contorno" id="editar">Editar respostas</button>
+      </div>
+      <p class="pequeno">O número usado, (47) 99131-8633, é o que aparece no Google; <strong>qual é o WhatsApp oficial hoje está a confirmar</strong>. Se preferir, mande por <a id="enviar-email" href="mailto:recantodoslagosgaspar@gmail.com">e-mail</a>.</p>
+    </div>
+  </section>
+
+  <section class="visita tom-noite" id="visita" aria-labelledby="t-vis">
+    <h2 id="t-vis">Agendar visita</h2>
+    <form class="vis-form" id="vis" novalidate>
+      <div class="resumo-erros" id="vis-erros" tabindex="-1" hidden></div>
+      <div class="vis-campo">
+        <label for="v-data">Dia em que gostaria de visitar</label>
+        <input type="date" id="v-data" name="vdata" aria-describedby="v-data-erro">
+        <p class="erro" id="v-data-erro" hidden></p>
+      </div>
+      <fieldset class="vis-campo" aria-describedby="v-periodo-erro">
+        <legend>Período</legend>
+        <label class="opcao"><input type="radio" name="periodo" value="manhã"> Manhã</label>
+        <label class="opcao"><input type="radio" name="periodo" value="tarde"> Tarde</label>
+        <p class="erro" id="v-periodo-erro" hidden></p>
+      </fieldset>
+      <button type="submit" class="bt bt-magenta">Pedir visita pelo WhatsApp</button>
+    </form>
+    <p class="pequeno">A visita é confirmada pelo espaço. WhatsApp oficial: a confirmar.</p>
+  </section>
+
+  <section class="duvidas tom-noite" id="duvidas" aria-labelledby="t-duv">
+    <h2 id="t-duv">Perguntas frequentes</h2>
+    <p class="pequeno">Respostas do anúncio do espaço no casamentos.com.br.</p>
+    <details><summary>Posso levar o bolo?</summary><p>Sim. O casal pode levar o bolo sem custo.</p></details>
+    <details><summary>O buffet é exclusivo?</summary><p>Sim, o espaço trabalha com buffet exclusivo. O anúncio cita menus de R$ 44 a R$ 89 por pessoa; valores atuais a confirmar.</p></details>
+    <details><summary>Até que horas pode ir a festa?</summary><p>Até as 4h.</p></details>
+    <details><summary>Quantos eventos por dia?</summary><p>Um evento por dia.</p></details>
+    <details><summary>Quais são as formas de pagamento?</summary><p>Cheque, depósito ou Pix, parcelado até a data do evento.</p></details>
+  </section>
+
+  <section class="avaliacoes tom-noite" aria-labelledby="t-av">
+    <h2 id="t-av">Avaliações</h2>
+    <div class="av-grade">
+      <div class="av-nota"><b>4,7</b><span>no Google</span><small>415 avaliações</small></div>
+      <div class="av-nota"><b>4,7</b><span>no casamentos.com.br</span><small>52 opiniões · 94% recomendam</small></div>
+      <dl class="av-quesitos">
+        <div><dt>Qualidade/preço</dt><dd>4,9</dd></div>
+        <div><dt>Serviço</dt><dd>4,8</dd></div>
+        <div><dt>Profissionalismo</dt><dd>4,8</dd></div>
+        <div><dt>Flexibilidade</dt><dd>4,7</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contato tom-noite" id="contato" aria-labelledby="t-cont">
+    <h2 id="t-cont">Contato</h2>
+    <div class="cont-grade">
+      <div>
+        <h3>Endereço</h3>
+        <p>Rua Leonardo Pedro Schimidt, 5159<br>Macucos · Gaspar/SC · CEP 89114-442</p>
+        <a class="bt bt-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Espa%C3%A7o%20Recanto%20dos%20Lagos%2C%20Rua%20Leonardo%20Pedro%20Schimidt%2C%205159%2C%20Gaspar%20SC" target="_blank" rel="noopener">Ver no mapa</a>
+      </div>
+      <div>
+        <h3>Fale com o espaço</h3>
+        <ul class="links" role="list">
+          <li><a href="tel:+5547991318633">(47) 99131-8633</a> <small>número do Google; WhatsApp oficial a confirmar</small></li>
+          <li><a href="mailto:recantodoslagosgaspar@gmail.com">recantodoslagosgaspar@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/recanto.dos.lagos/" target="_blank" rel="noopener">Instagram @recanto.dos.lagos</a></li>
+          <li><a href="https://www.facebook.com/recantodoslagos/" target="_blank" rel="noopener">Facebook /recantodoslagos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape tom-noite">
+  <p><strong>Espaço Recanto dos Lagos</strong> · Recantos dos Lagos Espaço de Eventos Ltda · CNPJ 11.662.860/0001-07</p>
+  <p>Demonstração feita por WolfStudio.</p>
+</footer>
+<script src="assets/js/recanto.js"></script>
+<script>
+/* Movimento (WolfStudio v3): revelar ao rolar, contadores e menu ativo. */
+(function(){
+  var R=document.documentElement; if(!R.classList.contains('anim')) return;
+  try{
+    var SEL='.cap-cabeca,.alternado figure,.nota-foto,.numeros li,.est-grade>div,.orc-cabeca,.passos,.orc-form,.vis-form,.duvidas details,.av-grade>*,.cont-grade>div', CNT='.av-nota b,.av-quesitos dd';
+    var io=new IntersectionObserver(function(es){
+      var n=0;
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        var el=e.target; io.unobserve(el);
+        if(n) el.style.setProperty('--d',Math.min(n,7)*90+'ms');
+        n++; el.classList.add('in');
+        setTimeout(function(){el.style.removeProperty('--d')},1700);
+      });
+    },{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+    var pend=[].slice.call(document.querySelectorAll(SEL));
+    pend.forEach(function(el){io.observe(el)});
+    /* rolagem rápida pode pular um bloco: o que já ficou para cima aparece sem esperar */
+    var tv=0;
+    function varre(){pend=pend.filter(function(el){
+      if(el.classList.contains('in')) return false;
+      if(el.getBoundingClientRect().bottom<0){io.unobserve(el);el.classList.add('in');return false}
+      return true;
+    })}
+
+    function conta(el){
+      var tn=null;
+      [].some.call(el.childNodes,function(c){if(c.nodeType===3&&/\d,\d/.test(c.nodeValue)){tn=c;return true}});
+      if(!tn) return;
+      var full=tn.nodeValue, m=full.match(/(\d+),(\d)/), alvo=parseFloat(m[1]+'.'+m[2]), t0=null;
+      function f(t){
+        if(!t0) t0=t;
+        var p=Math.min(1,(t-t0)/1100), v=alvo*(1-Math.pow(1-p,3));
+        tn.nodeValue=p<1?full.replace(m[0],v.toFixed(1).replace('.',',')):full;
+        if(p<1) requestAnimationFrame(f);
+      }
+      requestAnimationFrame(f);
+    }
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){cio.unobserve(e.target);conta(e.target)}})},{threshold:.6});
+    [].forEach.call(document.querySelectorAll(CNT),function(el){cio.observe(el)});
+
+    var links=[].slice.call(document.querySelectorAll('nav a[href^="#"]')), mapa={};
+    var sio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      links.forEach(function(a){a.classList.remove('on')}); mapa[e.target.id].classList.add('on');
+    })},{rootMargin:'-40% 0px -55% 0px'});
+    links.forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1)); if(s&&s.id!=='conteudo'){mapa[s.id]=a;sio.observe(s)}});
+
+    var espera=false;
+    function rolar(){
+      espera=false; var y=window.scrollY||0;
+      R.classList.toggle('rolou',y>8);
+      clearTimeout(tv); if(pend.length) tv=setTimeout(varre,180);
+      if(y<160) links.forEach(function(a){a.classList.remove('on')});
+
+    }
+    window.addEventListener('scroll',function(){if(!espera){espera=true;requestAnimationFrame(rolar)}},{passive:true});
+    window.addEventListener('resize',rolar);
+    rolar();
+
+  }catch(err){R.classList.remove('anim')}
+})();
+</script>
+</body>
+</html>
